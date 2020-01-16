@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+html, body{
+	height:100%;
+}
+
+body {
+	font: normal 100% 'Fira Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #DEE2FF;
+	color: #fff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.box {
+	background-color: #EEEDFF;
+	width: 80%;
+	height: 90%;
+	margin: auto;
+	margin-top: 2%;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
+.box__message {
+	width: 100%;
+	height: 85%;
+	position: relative;
+}
+
+#wrapper {
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+}
+
+#messages{
+  position:fixed;
+  bottom: 8em;
+  width:80%;
+}
+
+.send {
+	background-color: #3B49B5;
+	width: 100%;
+	height: 15%;
+	padding: 20px;
+}
+
+.send__heading {
+	width: 20%;
+	float: left;
+	text-align: right;
+	line-height: 30px;
+}
+
+.send__input {
+	width: 80%;
+	float: left;
+	padding-left: 10px;
+}
+
+.send__button {
+	outline: none;
+	border: 1px solid #fff;
+	cursor: pointer;
+	height: 30px;
+	background-color: transparent;
+	color: #fff;
+}
+
+#send input {
+	margin-top:0.3em;
+	height: 25px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+} 
+
+.message{
+	background-color: #4C5FEA;
+	margin: .5em;
+	min-height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 20px;
+}
+
+.message__text{
+	margin-left:1em;
+}
+
+.message__user{
+	font-weight: bold;
+	float:left;
+	padding-right: .5em;
+}
+
+.message__user:after{
+	content: ":";
+}
+
+.message__time{
+	float:left;
+	font-size: 0.7em;
+	color: #E7E7E7;
+	float: right;
+	padding-left: 2em;
+	
+}
+
+
+#popup{
+	display: none;
+}
+
+.popup__center
+{
+	z-index: 100;
+	top: 50%;
+	position: absolute;
+	left:0;
+	right:0;
+}
+
+.popup__center-to-left
+{
+	position: relative;
+	right: 50%;
+	float: right;
+}
+.popup__center-to-right
+{
+	position: relative;
+	right: -50%;
+}
+
+.popup__text
+{
+	border: 1px solid #fff;
+	border-radius: 3px;
+	background-color: #3B49B5;
+	color: #fff;
+	font-size: 16px;
+	padding:10px;
+}
+
+.cls{
+	clear: both;
+}
